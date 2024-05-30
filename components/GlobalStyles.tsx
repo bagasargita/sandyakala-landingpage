@@ -28,22 +28,24 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 .next-dark-theme {
-  --background: 26,32,44;
-  --secondBackground: 45,55,72;
-  --text: 237,237,238;
-  --textSecondary: 255,255,255;
-  --primary: 22,115,255; 
-  --secondary: 10,18,30;
-  --tertiary: 231,241,251;
-  --cardBackground: 45,55,72;
-  --inputBackground: 45,55,72;
-  --navbarBackground: 45,55,72;
-  --modalBackground: 26,32,44;
-  --errorColor: 207,34,46;
-  --logoColor: #fff;
+  --background: linear-gradient(to right, #333333, #dd1818);
+  --secondBackground: linear-gradient(to right, #333333, #dd1818);
+    --text: 10,18,20;
+    --textSecondary: 255,255,255;
+    --primary: linear-gradient(to right, #333333, #dd1818);
+    --secondary: linear-gradient(to right, #333333, #dd1818);
+    --tertiary: 231,241,251;
+    --cardBackground: 255,255,255;
+    --inputBackground: 255,255,255;
+    --navbarBackground: 255,255,255;
+    --modalBackground: 251,251,253;
+    --errorColor: 207,34,46;
+    --logoColor: #243A5A;
 }
 
 :root {
+    --color1: #333333;
+    --color2: #dd1818;
   --font: 'Poppins', sans-serif;
   
   --shadow-md: 0 2px 4px 0 rgb(12 0 46 / 4%);
@@ -115,7 +117,10 @@ body {
   line-height: 1.5;
   font-family: var(--font);
   color: rgb(var(--text));
-  background: rgb(var(--background));
+  //background: var(--background);
+    background-image: url("/background.jpg");
+  background-size: contain; /* Adjust this to fit your needs */
+  background-repeat: repeat; /* Adjust this to fit your needs */
   font-feature-settings: "kern";
 }
 
